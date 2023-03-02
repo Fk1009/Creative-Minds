@@ -1,0 +1,72 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: March 1, 2023 11:07 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.2.1
+WORDPRESS:	6.1.1
+PHP INFO:	7.4.13 | SAPI: apache2handler
+SERVER:		Apache/2.4.46 (Ubuntu) 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (128M default) 
+MEMORY STACK: 4MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20230301_creativeminds_60abd9cc1a224d325126_20230301110728_database.sql
+SQL FILE SIZE: 1.44MB (1514355)
+SQL FILE TIME: 2023-03-01 11:07:40
+SQL RUNTIME: 0.19 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /var/www/html/learning-task
+ARCHIVE FILE: 20230301_creativeminds_60abd9cc1a224d325126_20230301110728_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	93.15MB
+STATS:	Dirs 713 | Files 4,964
+SQL ADDED: 20230301_creativeminds_60abd9cc1a224d325126_20230301110728_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5677
+    [filename] => /var/www/html/learning-task/wp-content/backups-dup-lite/tmp/20230301_creativeminds_60abd9cc1a224d325126_20230301110728_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 5676
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 34.57MB
+ARCHIVE RUNTIME: 12.61 sec.
+MEMORY STACK: 6MB
+building installer
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.44MB
+INSTALLER FILE: 73.35KB
+ARCHIVE FILE: 36.41MB 
+EXPECTED FILE/DIRECTORY COUNT: 5,677
+ACTUAL FILE/DIRECTORY COUNT: 5,676
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 13.94 sec.
+PEAK PHP MEMORY USED: 8MB
+DONE PROCESSING => 20230301_creativeminds March 1, 2023 11:07 am
+

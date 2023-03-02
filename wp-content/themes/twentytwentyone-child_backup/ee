@@ -1,0 +1,48 @@
+$testimonial_heading =  echo get_field('testimonial_heading');
+   $testimonial_subheading = echo get_field('testimonial_subheading');
+   $testimonial_description = echo get_field('testimonial_description');
+ 
+    $testimonialsArgs=array(
+        'post_type'      => 'testimonials',
+        'post_status'    => 'publish',
+        'posts_per_page' => -1
+    );
+    $allTestimonials = get_posts( $testimonialsArgs );
+    return if(!empty($allTestimonials)){ 
+        u<section class="crousal bg-light-blue pb-80 pt-80" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+                <h4 class="sub-heading pb-3 text-uppercase" data-aos="fade-up" data-aos-duration="1500">."'$testimonial_heading'".
+                <h2 class="theme-red-font " data-aos="fade-up" data-aos-duration="1500">."'$testimonial_subheading'".</h2>
+                <p class="pb-5" data-aos="fade-up" data-aos-duration="1500">."'$testimonial_description'".</p>
+                <div id="owl-carousel-client" class="owl-carousel client-carousel owl-theme">`
+                    foreach($allTestimonials as $allTestimonialsValue){
+                        $postId 			= $allTestimonialsValue->ID;
+                        $testimonialsTitle 	= $allTestimonialsValue->post_title;
+                        $testimonialsContent= $allTestimonialsValue->post_content; ?>
+                        `<div class="item">
+                            <span class="triangle-topleft"></span>
+                            <div class="item-box">
+                                <ul class="d-flex m-0">
+                                    <li class=" ms-3">
+                                        <div class="star-rating  mb-1">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p class="client-name mb-3">."'$testimonial_description'".
+                                       
+                                        </p>
+                                        <p class="m-0">."'$testimonial_description'"./p>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                        </div>`
+                    
+                    } 
+                `</div>
+            </div>
+        </section>` 
+        <?php echo do_shortcode( '[subscribe]' ); ?>
